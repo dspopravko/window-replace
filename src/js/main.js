@@ -4,5 +4,9 @@ import tabs from './modules/tabs';
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
-    tabs('.glazing_slider', '.glazing_block', '.glazing_content', 'active');
+    tabs({
+        headerSelector: '.glazing_slider',
+        tabSelector: '.glazing_block',
+        contentSelector: '.glazing_content',
+        activeClass: 'active'});
 })

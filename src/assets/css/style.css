@@ -129,6 +129,9 @@ textarea:focus {
 .button:hover {
   cursor: pointer;
 }
+.button:focus {
+  border: 5px solid #55a831;
+}
 
 .section_header {
   margin-bottom: 8rem;
@@ -247,6 +250,9 @@ textarea:focus {
 .header_btn:hover {
   cursor: pointer;
 }
+.header_btn:focus {
+  border: 5px solid #55a831;
+}
 
 .header .working_hours {
   height: 10rem;
@@ -311,6 +317,10 @@ textarea:focus {
   color: #0089cd;
   text-decoration: underline;
 }
+.header .contact_us_wrap :focus {
+  border: 5px solid #55a831;
+  border-radius: 2px;
+}
 
 /*Main*/
 .main {
@@ -368,6 +378,7 @@ textarea:focus {
 
 .glazing_block {
   display: inline-block;
+  height: 220px;
 }
 
 .glazing_block img {
@@ -378,12 +389,19 @@ textarea:focus {
 
 .glazing_block a {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
   /*&:focus {
 				text-decoration: none;
 				color: #454545;
 			}*/
+}
+.slick-slide .active {
+  margin-bottom: 0;
+  border-bottom: 15px solid rgb(231, 231, 231);
+}
+.slick-slide .active a{
+  font-weight: 600;
 }
 
 .glazing_block a:hover {
@@ -391,7 +409,6 @@ textarea:focus {
 }
 
 .glazing_cold {
-  margin-top: 4rem;
   padding: 2.5rem 0;
   text-align: center;
   border-bottom-left-radius: 5px;
@@ -412,7 +429,6 @@ textarea:focus {
 }
 
 .glazing_warm {
-  margin-top: 4rem;
   padding: 2.5rem 0;
   text-align: center;
   border-bottom-right-radius: 5px;
