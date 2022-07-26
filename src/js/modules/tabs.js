@@ -33,9 +33,8 @@ const tabs = ({headerSelector, tabSelector, contentSelector, activeClass}) => {
             })
         }
     }
-
     header.addEventListener('click', handleClickTab);
-    header.addEventListener('keydown', handleClickTab);
+    header.addEventListener('focus', handleClickTab, true);
 };
 
 export default tabs;
