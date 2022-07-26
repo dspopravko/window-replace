@@ -26,7 +26,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: none;
+  outline: 4px solid seagreen;
 }
 
 .no-padding {
@@ -128,9 +128,6 @@ textarea:focus {
 
 .button:hover {
   cursor: pointer;
-}
-.button:focus {
-  border: 5px solid #55a831;
 }
 
 .section_header {
@@ -250,9 +247,6 @@ textarea:focus {
 .header_btn:hover {
   cursor: pointer;
 }
-.header_btn:focus {
-  border: 5px solid #55a831;
-}
 
 .header .working_hours {
   height: 10rem;
@@ -316,10 +310,6 @@ textarea:focus {
   font-style: normal;
   color: #0089cd;
   text-decoration: underline;
-}
-.header .contact_us_wrap :focus {
-  border: 5px solid #55a831;
-  border-radius: 2px;
 }
 
 /*Main*/
