@@ -3,7 +3,6 @@ const tabs = ({headerSelector, tabSelector, contentSelector, activeClass}) => {
           tabs = document.querySelectorAll(tabSelector),
           contents = document.querySelectorAll(contentSelector);
 
-
     const hideTabContent = () => {
         contents.forEach(item => {
             item.style.display = 'none';
@@ -24,7 +23,7 @@ const tabs = ({headerSelector, tabSelector, contentSelector, activeClass}) => {
 
     const handleClickTab = (e) => {
         const target = e.target;
-        if (target.classList.contains(tabSelector.replace(/\./, "")) || target.parentNode.classList.contains(tabSelector.replace(/\./, ""))) {
+        if (target && (target.classList.contains(tabSelector.replace(/\./, "")) || target.parentNode.classList.contains(tabSelector.replace(/\./, "")))) {
             tabs.forEach((tab, i) => {
                 if (target == tab || target.parentNode == tab) {
                     hideTabContent();
