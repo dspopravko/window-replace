@@ -26,7 +26,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: none;
+  outline: 4px solid seagreen;
 }
 
 .no-padding {
@@ -368,6 +368,7 @@ textarea:focus {
 
 .glazing_block {
   display: inline-block;
+  height: 220px;
 }
 
 .glazing_block img {
@@ -378,12 +379,19 @@ textarea:focus {
 
 .glazing_block a {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
   /*&:focus {
 				text-decoration: none;
 				color: #454545;
 			}*/
+}
+.slick-slide .active {
+  margin-bottom: 0;
+  border-bottom: 15px solid rgb(231, 231, 231);
+}
+.slick-slide .active a{
+  font-weight: 600;
 }
 
 .glazing_block a:hover {
@@ -391,7 +399,6 @@ textarea:focus {
 }
 
 .glazing_cold {
-  margin-top: 4rem;
   padding: 2.5rem 0;
   text-align: center;
   border-bottom-left-radius: 5px;
@@ -412,7 +419,6 @@ textarea:focus {
 }
 
 .glazing_warm {
-  margin-top: 4rem;
   padding: 2.5rem 0;
   text-align: center;
   border-bottom-right-radius: 5px;
